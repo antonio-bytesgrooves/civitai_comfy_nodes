@@ -40,7 +40,7 @@ class CivitAI_Checkpoint_Loader:
                 "ckpt_name": (checkpoints,),
             },
             "optional": {
-                "api_key": ("STRING", {"default": "503d493e9d6794d2ab3542db734f03b1", "multiline": False}),
+                "api_key": ("STRING", {"default": none, "multiline": False}),
                 "download_chunks": ("INT", {"default": 6, "min": 1, "max": 12, "step": 2}),
                 "download_path": (list(checkpoint_paths.keys()),),
             },
