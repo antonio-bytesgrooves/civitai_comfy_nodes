@@ -15,7 +15,8 @@ from .CivitAI_Model import CivitAI_Model
 from .utils import short_paths_map, model_path
 
 
-ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
+#ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
+ROOT_PATH = os.path.dirname(@"\data\")
 CHECKPOINT_PATH = folder_paths.folder_names_and_paths["checkpoints"][0][0]
 CHECKPOINTS = folder_paths.folder_names_and_paths["checkpoints"][0]
 
@@ -41,7 +42,7 @@ class CivitAI_Checkpoint_Loader:
             },
             "optional": {
                 "api_key": ("STRING", {"default": "503d493e9d6794d2ab3542db734f03b1", "multiline": False}),
-                "download_chunks": ("INT", {"default": 4, "min": 1, "max": 12, "step": 1}),
+                "download_chunks": ("INT", {"default": 6, "min": 1, "max": 12, "step": 2}),
                 "download_path": (list(checkpoint_paths.keys()),),
             },
             "hidden": {
