@@ -15,8 +15,7 @@ from .CivitAI_Model import CivitAI_Model
 from .utils import short_paths_map, model_path
 
 
-#ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
-ROOT_PATH = os.path.dirname(@"\data\")
+ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 CHECKPOINT_PATH = folder_paths.folder_names_and_paths["checkpoints"][0][0]
 CHECKPOINTS = folder_paths.folder_names_and_paths["checkpoints"][0]
 
